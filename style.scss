@@ -1,0 +1,404 @@
+@import "vender/vender";
+//@import "header";
+//@import "footer";
+
+//colors
+$color_fuscous_gray_approx: #555;
+$black: #000000;
+$color_curious_blue_approx: #138edb;
+$color_corn_approx: #f1c40f;
+$black_40: rgba(0,0,0,0.4);
+$black_25: rgba(0,0,0,0.25);
+$color_pot_pourri_approx: #f2ebde;
+$color_blue_approx: blue;
+$color_givry_approx: #f7e3c4;
+$color_pale_canary_approx: #ff9;
+$white: #fff;
+$color_gallery_approx: #eee;
+$color_california_approx: #f90;
+$color_masala_60_approx: rgba(60,60,60,.6);
+$web_orange: orange;
+$color_dove_gray_approx: #707070;
+
+//fonts
+$font_0: sans-serif;
+$font_1: Arial;
+$font_2: Helvetica Neue;
+$font_3: Helvetica;
+$font_4: serif;
+
+
+@import "base/base";
+@import "layout/layout";
+
+//.clearfix{
+//    @include clearfix;
+//}
+//.Legacy-pie-clearfix{
+//    
+//}
+//
+//.pie-cleaerfix{
+//    @include pie-clearfix;
+//   
+//}
+//
+//               
+
+
+//@extend-elements
+//original selectors
+//.speaker-image, .speakers img
+%extend_1 {
+	width: 25%;
+	float: left;
+	padding: 0 10px 10px 0;
+}
+
+
+
+.date {
+	font-family: $font_1, $font_2, $font_3, $font_0;
+	color: $black;
+	font-size: 20;
+	padding: 9;
+	font-weight: bold;
+}
+.session1 {
+	//Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+	border-radius: 2px 2px 2px;
+	//Instead of the line below you could use @includebox-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 1px 1px 1px 1px $black;
+	//Instead of the line below you could use @includebox-sizing($bs)
+	box-sizing: border-box;
+	//Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+	border-radius: 3px 4px 4px 4px;
+	margin: 6px;
+}
+.speakers {
+//	clear: both;
+//	outline: 1px solid;
+//	overflow: hidden;
+//	padding: 10px;
+//	//Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+//	border-radius: 2px 2px 2px;
+//	//Instead of the line below you could use @includebox-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+//	box-shadow: 1px 1px 1px 1px $black;
+//	//Instead of the line below you could use @includebox-sizing($bs)
+//	box-sizing: border-box;
+//	//Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+//	border-radius: 3px 4px 4px 4px;
+//	margin: 6px;
+//	img {
+//		@extend %extend_1;
+//	}
+}
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	color: inherit;
+	text-decoration: none;
+	&:active {
+		text-decoration: underline;
+	}
+	&:link {
+		text-decoration: none;
+	}
+	&:visited {
+		text-decoration: none;
+		color: inherit;
+	}
+	&:hover {
+		text-decoration: underline;
+		color: $color_blue_approx;
+	}
+}
+.speaker-image {
+	@extend %extend_1;
+}
+.firstText {
+	//Instead of the line below you could use @includebox-sizing($bs)
+	box-sizing: content-box;
+	border: none;
+	font: normal 32px/1 "Bitter", Helvetica, sans-serif;
+	color: $color_curious_blue_approx;
+	text-align: center;
+	text-overflow: clip;
+	background: $color_corn_approx;
+	//Instead of the line below you could use @includebox-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 4px 4px 6px 1px $black_40;
+	//Instead of the line below you could use @includetext-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	text-shadow: 1px 1px 0 $black_25;
+}
+.subject {
+	clear: both;
+	outline: 1px solid;
+	overflow: hidden;
+	padding: 10px;
+	background-color: $color_pot_pourri_approx;
+}
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid $black;
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	font-family: $font_4;
+	font-size: 100%;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+}
+h2 {
+	font-family: $font_4;
+	font-size: 90%;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+}
+h3 {
+	font-family: $font_4;
+}
+h4 {
+	font-family: $font_4;
+	font-size: 100%;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+}
+h5 {
+	font-family: $font_4;
+	font-size: 100%;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+}
+h6 {
+	font-family: $font_4;
+	font-size: 100%;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+}
+speakers {
+	border-left-width: thick;
+}
+div {
+//	margin: 10px;
+//	padding: inherit;
+	background-color:$color_givry_approx;
+}
+.h3 {
+	font-size: 80%;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+ol {
+	margin: 0;
+	padding: 0;
+}
+li {
+	margin-bottom: 0;
+}
+dl {
+	margin: 0;
+}
+dd {
+	margin: 0;
+	padding: 0;
+}
+blockquote {
+	margin: 0;
+	padding: 0;
+	quotes: none;
+	&:before {
+		content: '';
+		content: none;
+	}
+	&:after {
+		content: '';
+		content: none;
+	}
+}
+q {
+	quotes: none;
+	&:before {
+		content: '';
+		content: none;
+	}
+	&:after {
+		content: '';
+		content: none;
+	}
+}
+figure {
+	margin: 0;
+	padding: 0;
+}
+tr {
+}
+th {
+}
+td {
+}
+ins {
+	background-color: $color_pale_canary_approx;
+	color: $black;
+	text-decoration: none;
+}
+mark {
+	background-color: $color_pale_canary_approx;
+	color: $black;
+	font-style: italic;
+	font-weight: bold;
+}
+del {
+	text-decoration: line-through;
+}
+abbr[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+dfn[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+.track3 {
+	//Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+	border-radius: 2px 2px 2px;
+	//Instead of the line below you could use @includebox-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 1px 1px 1px 1px $black;
+	//Instead of the line below you could use @includebox-sizing($bs)
+	box-sizing: border-box;
+	//Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+	border-radius: 3px 4px 4px 4px;
+	margin: 6px;
+}
+.track2 {
+	//Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+	border-radius: 2px 2px 2px;
+	//Instead of the line below you could use @includebox-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 1px 1px 1px 1px $black;
+	//Instead of the line below you could use @includebox-sizing($bs)
+	box-sizing: border-box;
+	//Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+	border-radius: 3px 4px 4px 4px;
+	margin: 6px;
+}
+.track {
+	clear: both;
+	outline: 1px solid;
+	overflow: hidden;
+	padding: 10px;
+}
+.top {
+	padding: inherit;
+	border-top: $black;
+	outline-color: $black;
+}
+#main_nav {
+	clear: both;
+	ul {
+		list-style: none;
+	}
+	li a {
+		display: block;
+		color: $white;
+		background-color: $color_fuscous_gray_approx;
+		text-transform: uppercase;
+		padding: 0.625em;
+		text-decoration: none;
+		border-bottom: 1px solid $color_gallery_approx;
+		font-weight: 900;
+		&:hover {
+			color: $color_fuscous_gray_approx;
+			background-color: $white;
+		}
+		&:active {
+			color: $color_fuscous_gray_approx;
+			background-color: $color_california_approx;
+		}
+	}
+}
+header {
+	background-color: $web_orange;
+	padding: 10px;
+	color: $color_dove_gray_approx;
+	//Instead of the line below you could use @includetext-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	text-shadow: 5px 4px 0 $color_gallery_approx,7px 6px 0 $color_dove_gray_approx;
+	font-size: 60px;
+	margin-top: 50px;
+	margin-bottom: inherit;
+}
+@media only screen and (min-width:42.75em) {
+	.menu {
+		display: none;
+	}
+	#main_nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+		background-color: $color_fuscous_gray_approx;
+		li {
+			display: inline;
+			line-height: 1em;
+			a {
+				float: left;
+				padding: 0.9375em;
+				border-bottom: none;
+				&.top {
+					display: none;
+				}
+			}
+		}
+	}
+	.container {
+		margin-top: 3.75em;
+	}
+}
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+	height: 0;
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+nav ul {
+	margin-left: 0;
+	padding-left: 0;
+	list-style: none;
+	li {
+		margin-bottom: 0;
+	}
+}
+.menu a {
+	padding: 0.5em 0.625em;
+	background-color: $color_fuscous_gray_approx;
+	background-color: $color_masala_60_approx;
+	//Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+	border-radius: 5px;
+	color: $white;
+	text-decoration: none;
+	&:hover {
+		color: $color_fuscous_gray_approx;
+		background-color: $color_california_approx;
+	}
+}
