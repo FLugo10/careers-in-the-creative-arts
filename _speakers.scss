@@ -1,0 +1,72 @@
+.speakers{ 
+    
+    outline: 1px solid;
+    overflow: hidden;
+    padding:10px;
+    
+    
+    -webkit-border-radius: 2px 2px 2px;
+border-radius: 2px 2px 2px;
+  -webkit-box-shadow: 1px 1px 1px 1px #000000;
+box-shadow: 1px 1px 1px 1px #000000;
+    
+    -moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+    
+    -webkit-border-radius: 3px 4px 4px 4px;
+border-radius: 3px 4px 4px 4px;
+    
+    margin: 6px;
+ 
+}
+
+.speaker-image, .speakers img{
+    width: 25%;
+    float:left;
+    padding: 0 10px 10px 0; 
+//    tracks: clear both;
+}
+
+
+
+.track{
+    background-color: #f2ebde;
+}
+
+// ===========================================
+// SMALL
+// ===========================================
+@include respond-to(small){
+     .speaker-wrapper{
+          @include cols(1,2);   
+     }
+    .speaker-wrapper:nth-of-type(2n+1){
+     clear: both;   
+    }
+}
+
+// ===========================================
+// MEDIUM
+// ===========================================
+@include respond-to(medium){
+     .speaker-wrapper{
+//          @include cols(1,3);   
+     }
+}
+
+
+// ===========================================
+// LARGE
+// ===========================================
+@include respond-to(large){
+     .speaker-wrapper{
+          @include cols(1,4);   
+     }
+    .speaker-wrapper:nth-of-type(2n+1){
+     clear: none;   
+    }
+    .speaker-wrapper:nth-of-type(4n+1){
+     clear: both;   
+    }
+}
