@@ -1,0 +1,52 @@
+//Base Responsive Layout Styles
+@import "compass/css3";
+
+//mod from http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+// apply a natural box layout model to all elements, but allowing components to change 
+//html {
+//  @include box-sizing(border-box);
+//}
+//*, *:before, *:after {
+//  box-sizing: inherit;
+//}
+//
+//
+////responsive images and video
+//img, video{
+//    width:auto;
+//    height: auto;
+//    max-width: 100%;
+//}
+
+
+//.html {
+//	//Instead of the line below you could use @includebox-sizing($bs)
+//	box-sizing: border-box;
+//}
+//* {
+//	//Instead of the line below you could use @includebox-sizing($bs)
+//	box-sizing: inherit;
+//	&:before {
+//		//Instead of the line below you could use @includebox-sizing($bs)
+//		box-sizing: inherit;
+//	}
+//	&:after {
+//		//Instead of the line below you could use @includebox-sizing($bs)
+//		box-sizing: inherit;
+//	}
+//}
+.body {
+	font-family: $font_0;
+	font-size: 100%;
+	line-height: 1.5;
+}
+p {
+	margin: 0 0 1m 0;
+}
+b {
+	font-weight: bold;
+}
+strong {
+	font-weight: bold;
+}
+
